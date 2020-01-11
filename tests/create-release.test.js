@@ -134,6 +134,7 @@ describe('Create Release', () => {
       .mockReturnValueOnce('refs/tags/v1.0.0')
       .mockReturnValueOnce('myRelease')
       .mockReturnValueOnce('myBody')
+      .mockReturnValueOnce('')
       .mockReturnValueOnce('false')
       .mockReturnValueOnce('false');
 
@@ -145,7 +146,6 @@ describe('Create Release', () => {
       tag_name: 'v1.0.0',
       name: 'myRelease',
       body: 'myBody',
-      target_commitish: '',
       draft: false,
       prerelease: false
     });
